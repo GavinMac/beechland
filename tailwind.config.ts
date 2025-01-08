@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "footer-bg-img": "url('/images/macleod-tartan.png')",
+      },
+      fontFamily: {
+        sans: ['var(--font-morris-roman)']
+      }
     },
   },
   plugins: [],
