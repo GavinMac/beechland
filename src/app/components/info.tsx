@@ -15,17 +15,17 @@ export default function Information() {
 
 return(
     <div className="flex flex-col justify-center w-100vw my-10 text-center">
-    <Title order={3}>
-      <a id="info">Info</a>
+    <Title order={3} className="my-5">
+      <a id="info">Information</a>
     </Title>
-    <Text>
+    <Text className="my-5">
       Beechland Annexe is a small self catering apartment attached to a
       family home in the Isle of Lewis. Stay in a small village called
       Tunga (Tong), a short drive away from the town of Stornoway, the
       main town on the island.
     </Text>
 
-    <Text>
+    <Text className="my-5">
       There is a beach a short walk from the accomodation within the
       village and more beaches further north more accessible via car or
       bus.
@@ -56,7 +56,7 @@ return(
                 className="text-white opacity-75"
               />
             }
-            className="bg-gray-300"
+            className="bg-gray-300 my-5"
           >
             <CarouselSlide>
               <Image

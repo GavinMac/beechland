@@ -1,31 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import { Carousel, CarouselSlide } from "@mantine/carousel";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faArrowAltCircleLeft,
-  faArrowAltCircleRight,
   faBook,
-  faCode,
   faInfo,
   faLocation,
   faMap,
-  faMapPin,
 } from "@fortawesome/free-solid-svg-icons";
-import { Text, Title } from "@mantine/core";
-import { useRef, useState } from "react";
-import Autoplay from "embla-carousel-autoplay";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import markerIconPng from "leaflet/dist/images/marker-icon.png";
-import { Icon } from "leaflet";
+import { Text } from "@mantine/core";
+import { useState } from "react";
 import "leaflet/dist/leaflet.css";
 import Information from "./components/info";
 import Location from "./components/location";
 import Floorplan from "./components/floorplan";
 import Booking from "./components/booking";
-import localFont from "next/font/local";
 
 export default function Home() {
   const [selection, setSelection] = useState("info");
