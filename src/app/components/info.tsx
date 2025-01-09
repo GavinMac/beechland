@@ -5,7 +5,7 @@ import { Carousel, CarouselSlide } from "@mantine/carousel";
 import { Title, Text } from "@mantine/core";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import {
   faArrowCircleLeft,
   faArrowCircleRight,
