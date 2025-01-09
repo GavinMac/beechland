@@ -21,13 +21,13 @@ export default function Home() {
 
   useEffect(function mount() {
     function onScroll() {
-      console.log("scroll!");
+      console.log("mounted");
     }
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("mounted", onScroll);
 
     return function unMount() {
-      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("mounted", onScroll);
     };
   });
 

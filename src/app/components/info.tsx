@@ -5,15 +5,19 @@ import { Carousel, CarouselSlide } from "@mantine/carousel";
 import { Title, Text } from "@mantine/core";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   faArrowCircleLeft,
   faArrowCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Information() {
+
   const autoplay = useRef(Autoplay({ delay: 3000 }));
-  autoplay.current.play;
+
+  useEffect(function mount() {
+    autoplay.current.play;
+  });
 
   return (<div className="flex flex-col justify-center w-100vw my-10 text-center">
       <Title order={3} className="my-5">
