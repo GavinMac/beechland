@@ -42,6 +42,7 @@ export default function Information() {
         withIndicators
         align="start"
         plugins={[autoplay.current]}
+        onLoad={() => autoplay.current.play}
         nextControlIcon={
           <FontAwesomeIcon
             icon={faArrowCircleRight}
