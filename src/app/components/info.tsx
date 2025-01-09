@@ -62,7 +62,7 @@ export default function Information() {
         <CarouselSlide>
           <Image
             src="/images/rooms/outside-pano.jpg"
-            alt="Outside Stairs"
+            alt="Outside"
             width={0}
             height={0}
             sizes="100vw"
@@ -86,7 +86,7 @@ export default function Information() {
         <CarouselSlide>
           <Image
             src="/images/rooms/livingroom-entrance.jpg"
-            alt="Outside Stairs"
+            alt="Living Room Entrance"
             width={0}
             height={0}
             layout="fill"
@@ -99,7 +99,20 @@ export default function Information() {
         <CarouselSlide>
           <Image
             src="/images/rooms/livingroom.jpg"
-            alt="Outside Stairs"
+            alt="Livingroom"
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+            sizes="100%"
+            className="w-full h-auto"
+          />
+        </CarouselSlide>
+
+        <CarouselSlide>
+          <Image
+            src="/images/rooms/livingroom-back.jpg"
+            alt="Livingroom 2"
             width={0}
             height={0}
             layout="fill"
@@ -112,7 +125,72 @@ export default function Information() {
         <CarouselSlide>
           <Image
             src="/images/rooms/kitchen-entrance.jpg"
-            alt="Outside Stairs"
+            alt="Kitchen entrance"
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+            sizes="100%"
+            className="w-full h-auto"
+          />
+        </CarouselSlide>
+
+        <CarouselSlide>
+          <Image
+            src="/images/rooms/kitchen5.jpg"
+            alt="Kitchen"
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+            sizes="100%"
+            className="w-full h-auto"
+          />
+        </CarouselSlide>
+
+        <CarouselSlide>
+          <Image
+            src="/images/rooms/bathroom-new1.jpg"
+            alt="Bathroom"
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+            sizes="100%"
+            className="w-full h-auto"
+          />
+        </CarouselSlide>
+
+        <CarouselSlide>
+          <Image
+            src="/images/rooms/bathroom-new2.jpg"
+            alt="Bathroom 2"
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+            sizes="100%"
+            className="w-full h-auto"
+          />
+        </CarouselSlide>
+
+        <CarouselSlide>
+          <Image
+            src="/images/rooms/single-bed.jpg"
+            alt="Single bedroom"
+            width={0}
+            height={0}
+            layout="fill"
+            objectFit="contain"
+            sizes="100%"
+            className="w-full h-auto"
+          />
+        </CarouselSlide>
+
+        <CarouselSlide>
+          <Image
+            src="/images/rooms/double-bed.jpg"
+            alt="Double bedroom"
             width={0}
             height={0}
             layout="fill"

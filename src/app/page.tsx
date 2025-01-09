@@ -35,14 +35,16 @@ export default function Home() {
     <div className="flex flex-col justify-center w-100vw">
       {/* HEADER */}
       <header className="flex flex-col sticky top-0 min-h-[15vh] w-100vw justify-center z-50 shadow-[0_5px_10px_0px_rgba(0,0,0,0.75)]">
-        <div className="flex flex-row w-100vw text-center justify-center mt-5">
-          <Image
-            src="/images/MacleodClanCrestWhite.png"
-            alt="Macleod Crest"
-            width={100}
-            height={100}
-          />
-          <div className="flex flex-col justify-center text-center w-100vw my-5">
+        <div className="flex flex-row w-100vw text-center justify-center mt-1">
+          <div className="self-center">
+            <Image
+              src="/images/MacleodClanCrestWhite.png"
+              alt="Macleod Crest"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="flex flex-col justify-center text-center w-100vw my-2">
             <h1 className={`text-center morrisFontTitle antialiased`}>
               Beechland
             </h1>
@@ -50,7 +52,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row justify-around p-5">
+        <div className="flex flex-row w-100vw h-auto justify-around p-2 bg-black/25 mt-2">
           <Link
             className="flex items-center gap-1 hover:underline hover:underline-offset-4"
             href=""
