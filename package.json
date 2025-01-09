@@ -16,11 +16,11 @@
     "@mantine/core": "^7.15.3",
     "@mantine/hooks": "^7.15.3",
     "embla-carousel-autoplay": "^7.1.0",
-    "embla-carousel-react": "^7.1.0",
+    "embla-carousel-react": "^8.5.2",
     "leaflet": "^1.9.4",
     "next": "^15.1.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-leaflet": "^5.0.0"
   },
   "devDependencies": {

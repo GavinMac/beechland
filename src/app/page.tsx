@@ -10,8 +10,7 @@ import {
   faMap,
 } from "@fortawesome/free-solid-svg-icons";
 import { Text } from "@mantine/core";
-import { useState } from "react";
-import "leaflet/dist/leaflet.css";
+import { useEffect, useState } from "react";
 import Information from "./components/info";
 import Location from "./components/location";
 import Floorplan from "./components/floorplan";
@@ -19,6 +18,18 @@ import Booking from "./components/booking";
 
 export default function Home() {
   const [selection, setSelection] = useState("info");
+
+  useEffect(function mount() {
+    function onScroll() {
+      console.log("scroll!");
+    }
+
+    window.addEventListener("scroll", onScroll);
+
+    return function unMount() {
+      window.removeEventListener("scroll", onScroll);
+    };
+  });
 
   return (
     <div className="flex flex-col justify-center w-100vw">
@@ -32,9 +43,7 @@ export default function Home() {
             height={100}
           />
           <div className="flex flex-col justify-center text-center w-100vw my-5">
-            <h1
-              className={`text-center morrisFontTitle antialiased`}
-            >
+            <h1 className={`text-center morrisFontTitle antialiased`}>
               Beechland
             </h1>
             <Text>Self Catering Annexe</Text>
@@ -100,7 +109,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="flex flex-col min-h-[15vh] justify-center justify-items-center w-100vw bg-footer-bg-img">
-        <div className="grid-cols-2 gap-4 w-100vw grid-flow-col auto-cols-max">
+        {/* <div className="grid-cols-2 gap-4 w-100vw grid-flow-col auto-cols-max">
           <div className="order-1">
             <Link
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -122,7 +131,7 @@ export default function Home() {
               Link 2
             </Link>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex flex-col justify-center w-100vw text-center mt-32 mb-5">
           <div className="w-auto bottom-0">

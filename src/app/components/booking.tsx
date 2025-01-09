@@ -1,7 +1,8 @@
+'use client';
+
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Title, Text } from "@mantine/core";
-import Image from "next/image";
 
 export default function Booking() {
   return (
@@ -9,6 +10,7 @@ export default function Booking() {
       <Title order={3}>
         <a id="booking">Booking</a>
       </Title>
+      <Text>We charge £350 per week.</Text>
       <Text>To create a booking, please contact us at:</Text>
       <Text>
         <FontAwesomeIcon icon={faEnvelope} className="mx-2"/>
