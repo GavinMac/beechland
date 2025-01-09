@@ -12,14 +12,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Information() {
-
   const autoplay = useRef(Autoplay({ delay: 3000 }));
 
-  useEffect(function mount() {
+  useEffect(() => {
     autoplay.current.play;
   });
 
-  return (<div className="flex flex-col justify-center w-100vw my-10 text-center">
+  return (
+    <div className="flex flex-col justify-center w-100vw my-10 text-center">
       <Title order={3} className="my-5">
         <a id="info">Information</a>
       </Title>
