@@ -10,7 +10,7 @@ export default function Booking() {
       <Title order={3}>
         <a id="booking">Booking</a>
       </Title>
-      <Text className="my-5">We charge £350 per week. Avilable for bookings all year round.</Text>
+      <Text className="my-5">We charge £350 per week. Available for bookings all year round.</Text>
       <Text className="my-5">To create a booking, please contact us at:</Text>
       <Text className="my-5">
         <FontAwesomeIcon icon={faEnvelope} className="mx-2"/>
